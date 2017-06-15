@@ -1,0 +1,32 @@
+{
+  "name": "tiggo",
+  "version": "0.1.0",
+  "description": "Battle City, but hacked",
+  "main": "index.js",
+  "dependencies": {
+    "pixi.js": "^4.5.3"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "build": "mkdir -p dist/ && browserify index.js -o dist/bundle.js",
+    "watch": "watchify index.js -o dist/bundle.js",
+    "clean": "rm -rf dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anqurvanillapy/tiggo.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "AnqurVanillapy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anqurvanillapy/tiggo/issues"
+  },
+  "homepage": "https://github.com/anqurvanillapy/tiggo#readme"
+}
